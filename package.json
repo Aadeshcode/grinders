@@ -1,0 +1,38 @@
+{
+  "name": "basicsetup",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.10",
+    "@chakra-ui/react": "^2.3.4",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@next-auth/mongodb-adapter": "^1.0.4",
+    "@redux-devtools/extension": "^3.2.3",
+    "@reduxjs/toolkit": "^1.8.5",
+    "axios": "^0.27.2",
+    "framer-motion": "^7.3.6",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.1",
+    "next": "12.3.1",
+    "next-auth": "^4.10.3",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "18.2.0",
+    "react-query": "^3.39.2",
+    "react-redux": "^8.0.4",
+    "react-spring": "^9.5.5",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1"
+  },
+  "devDependencies": {
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1"
+  }
+}
