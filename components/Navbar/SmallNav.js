@@ -16,6 +16,7 @@ import {
   Stack,
   Image,
 } from "@chakra-ui/react";
+import { useRouter } from "next/dist/client/router";
 import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
 
 const Links = [
@@ -27,13 +28,13 @@ const Links = [
 
 export default function SmallNav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const router = useRouter();
   return (
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack spacing={8} alignItems={"center"}>
-            <Flex alignItems={"center"}>
+            <Flex alignItems={"center"} onClick={() => router.push("/")}>
               <Image src="/pics/logo.png" alt="logo" height={"40px"} />
               <h1>Grinders Cafe</h1>
             </Flex>
