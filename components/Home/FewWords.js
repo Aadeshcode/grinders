@@ -2,7 +2,9 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { useSpring, animated } from "react-spring";
 import Image from "next/image";
+import { useRouter } from "next/router";
 const FewWords = () => {
+  const router = useRouter();
   const Number = ({ n }) => {
     const { number } = useSpring({
       from: { number: 0 },
@@ -33,7 +35,11 @@ const FewWords = () => {
               </li>
             </ul>
             <div>
-              <Button className="py-3 mt-3" variant="danger">
+              <Button
+                className="py-3 mt-3"
+                variant="danger"
+                onClick={() => router.push("/aboutus")}
+              >
                 MORE ABOUT US
               </Button>
             </div>

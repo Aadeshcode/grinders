@@ -1,3 +1,4 @@
+import SocialProfile from "./Card";
 import LargeWithLogoCentered from "./Footer";
 import Barista from "./Home/Barista";
 import Carousel from "./Home/Carousel";
@@ -8,6 +9,7 @@ import Services from "./Home/Services";
 import GridBlurredBackdrop from "./Home/Testimonials";
 import MainNavbar from "./Navbar/MainNavbar";
 import SmallNav from "./Navbar/SmallNav";
+import Product from "./Product";
 
 export {
   Carousel,
@@ -20,4 +22,6 @@ export {
   GridBlurredBackdrop,
   LargeWithLogoCentered,
   SmallNav,
+  SocialProfile,
+  Product,
 };
