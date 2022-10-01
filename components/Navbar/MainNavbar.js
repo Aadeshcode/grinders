@@ -3,8 +3,9 @@ import { Box, Center, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "react-bootstrap";
-import GridBlurredBackdrop from "../Home/Testimonials";
+import { useRouter } from "next/dist/client/router";
 const MainNavbar = () => {
+  const router = useRouter();
   return (
     <>
       <div
@@ -34,7 +35,11 @@ const MainNavbar = () => {
             </li>
           </ul>
         </div>
-        <Button className="py-3 mt-3" variant="danger">
+        <Button
+          className="py-3 mt-3"
+          variant="danger"
+          onClick={() => router.push("/menu")}
+        >
           SEE MENU
         </Button>
         <p className="text-white text-center mt-5 p-3">
