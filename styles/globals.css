@@ -161,7 +161,12 @@ h3,
 span {
   font-family: "Poppins-Medium" !important;
 }
-
+.bd-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
 .css-19px24z ::before {
   opacity: 0 !important;
   width: 50% !important;

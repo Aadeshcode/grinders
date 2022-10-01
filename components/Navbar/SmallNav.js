@@ -3,7 +3,6 @@ import {
   Flex,
   Avatar,
   HStack,
-  Link,
   IconButton,
   Button,
   Menu,
@@ -18,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { useRouter } from "next/dist/client/router";
 import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
-
+import Link from "next/link";
 const Links = [
   { link: "Home", href: "/" },
   { link: "About Us", href: "/aboutus" },
